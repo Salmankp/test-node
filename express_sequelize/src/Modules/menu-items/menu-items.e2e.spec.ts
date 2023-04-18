@@ -13,6 +13,7 @@ describe('MenuItemsController', () => {
       .expect(200);
 
     const result = response.body;
+    console.log('222', result)
 
     expect(result.length).toBe(1);
     expect(result[0].children[0].name).toBe('Laracon');
